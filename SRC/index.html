@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EduTeach Hub</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script type="module" src="lib/auth.js"></script>
+  <style>
+    body { font-family: sans-serif; text-align: center; padding: 2rem; background: #f0f7ff; }
+    button { margin: 1rem; padding: 1rem; font-size: 1.2rem; background: #007bff; color: white; border: none; border-radius: 8px; }
+    #dashboard { margin-top: 2rem; }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <h1>EduTeach Hub</h1>
+    <p>Choose your role:</p>
+    <button onclick="go('student')">Student</button>
+    <button onclick="go('teacher')">Teacher</button>
+    <button onclick="go('parent')">Parent</button>
+    <div id="dashboard"></div>
+  </div>
+
+  <script>
+    window.go = (role) => {
+      localStorage.setItem('role', role);
+      location.href = role + '.html';
+    };
+  </script>
+</body>
+</html>
