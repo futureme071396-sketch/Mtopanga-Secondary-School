@@ -1,0 +1,5 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; color: white; }
+#app { padding: 2rem; }
+button { background: rgba(255,255,255,0.2); border: 2px solid white; color: white; padding: 1rem 2rem; margin: 0.5rem; border-radius: 12px; font-weight: bold; }
+input, textarea { width: 100%; padding: 1rem; margin: 1rem 0; border-radius: 8px; border: none; }
