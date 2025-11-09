@@ -1,8 +1,9 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  root: 'src',
+  // No root/outDir – Vite defaults: root=project, outDir=dist
   build: {
-    outDir: '../dist'
+    // Ensures dist is emptied
+    emptyOutDir: true
   }
 });
